@@ -18,14 +18,15 @@ public:
 
 	void StaffInformation(string name, string position, int experience,int rating);
 
-	void WriteInfo();
-	void ChangeStaffRating();
-	void AddStaff(string name,string position,int experience, int rating);
+	void Write() override;
 
 	string getposition();
 	void setposition(string);
 	void setexperience(int);
 	int getexperience();
+
+	int getrating();
+
 
 };
 #endif

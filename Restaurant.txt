@@ -1,4 +1,3 @@
-CheeseBakery modern desserts 5 250
-Salalat youth salats 4 100
-Otset loft ukrainian 3 300
-Celentano modern italian 4 200
+Salalat modern salats 3 200
+CheeseBakery youth deserts 4 300
+LaPiec loft pizza 5 250

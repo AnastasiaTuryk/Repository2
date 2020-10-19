@@ -2,9 +2,10 @@
 #define PERSON_H
 #include<string>
 #include<iostream>
+#include "Entity.h"
 using namespace std;
 
-class Person
+class Person :public Entity
 {
 public: 
 	string name = "";
@@ -12,13 +13,15 @@ public:
 	{
 		this->name = name;
 	}
-
-	void addPerson(string name)
+	string getname()
+	{
+		return name;
+	}
+	void setname(string name)
 	{
 		this->name = name;
 	}
-
-	virtual void WriteInfo()
+	virtual void Write()
 	{
 		cout <<name<<endl;
 	}

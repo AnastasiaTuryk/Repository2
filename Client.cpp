@@ -11,24 +11,18 @@ Client::Client(string name,string surname,int discount): Person(name)
 	this->discount = discount;
 	
 }
-void Client::ClientInformation(string name,string surname,int discount) 
+/*void Client::ClientInformation(string name,string surname,int discount) 
 {
 	this->name = name;
 	this->surname = surname;
 	this->discount = discount;
-}
+}*/
 
-void Client::WriteInfo()
+void Client::Write()
 {
 	cout << "info about guest:" << name << " " << surname <<" "<<discount<<endl;
 }
 
-void Client::addClient(string name, string surname,int discount)
-{
-	addPerson(name);
-	this->surname = surname;
-	this->discount = discount;
-}
 string Client::getname()
 {
 	return name;

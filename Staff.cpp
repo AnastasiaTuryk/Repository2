@@ -38,22 +38,14 @@ int Staff::getexperience()
 	return experience;
 }
 
-void Staff::WriteInfo()
+int Staff::getrating()
+{
+	return rating;
+}
+
+void Staff::Write()
 {
 	cout << "name: " << name << endl << "position: " << position << endl << "experience: " << experience << endl << "rating: " << rating << endl;;
 	cout << endl;
 }
 
-void Staff::ChangeStaffRating()
-{
-	cout << "\n\n change staff rating " << endl;
-	cin >> rating;
-}
-
-void Staff::AddStaff(string name, string position, int experience, int rating)
-{
-	addPerson(name);
-	this->position = position;
-	this->experience = experience;
-	this->rating = rating;
-}

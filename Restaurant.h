@@ -2,22 +2,25 @@
 #define RESTAURANT_H
 #include<string>
 #include<iostream>
+#include"Establishment.h"
 using namespace std;
 
-class Restaurant
+class Restaurant :public Establishment
 {
 protected:
-	string design;
 	string kitchen;
 
 public:
-	string name;
 	int rating;
-	float price;
 	Restaurant(string = "", string = "", string = "", int = 0, float = 0);
-	void RestaurantInformation(string name, string design, string kitchen, int rating,float price);
+	//void RestaurantInformation(string name, string design, string kitchen, int rating,float price);
 	void Write();
 
+	int getrating();
+	string getname();
+	string getkitchen();
+	float getprice();
+	string getdesign();
 };
 #endif // !RESTURANT_H
 

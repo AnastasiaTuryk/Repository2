@@ -15,9 +15,9 @@ public:
 	
 	Client(string name="",string surname="",int discount=0);
 
-	void ClientInformation(string name,string surname,int discount);
-	void WriteInfo() override;
-	void addClient(string name,string surname,int discount);
+	//void ClientInformation(string name,string surname,int discount);
+	void Write() override;
+	//void addClient(string name,string surname,int discount);
 
 	string getname();
 	string getsurname();
